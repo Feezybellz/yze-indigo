@@ -1,0 +1,5 @@
+.vagrant/
+oluwatimlehin.box
+Vagrantfile
+.env/
+www/phpmyadmin
