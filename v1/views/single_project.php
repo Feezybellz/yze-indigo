@@ -150,16 +150,19 @@ if (count($project) > 0) {
 <script src="/real3dflip/deploy/js/flipbook.min.js"></script>
 
 
-<script type="text/javascript">
+<?php if ($project['input_brochure_link']): ?>
 
-$(document).ready(function () {
-  // console.log($("#book1"))
-  $("#projFile1").flipBook({
-    // pdfUrl:'//www.indigodevelopments.com/_files/ugd/f844ed_cb55094cbe9f4ab0b0feaeae18c75157.pdf'
-    pdfUrl:'<?=$project['input_brochure_link']?>'
+  <script type="text/javascript">
+
+  $(document).ready(function () {
+    // console.log($("#book1"))
+    $("#projFile1").flipBook({
+      // pdfUrl:'//www.indigodevelopments.com/_files/ugd/f844ed_cb55094cbe9f4ab0b0feaeae18c75157.pdf'
+      pdfUrl:'<?=$project['input_brochure_link']?>'
+    })
+
+    // fileViewer.style.height = "auto";
+    // fileViewer.style.clear = "both";
   })
-
-  // fileViewer.style.height = "auto";
-  // fileViewer.style.clear = "both";
-})
 </script>
+<?php endif; ?>
