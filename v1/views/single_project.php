@@ -56,8 +56,10 @@ if (count($project) > 0) {
           By aiming to take the life quality to an upper level with the whole realized Projects of luxury.
         </h5>
         <div class="property-infos col-md-4">
-        	<span class="odometer"brabus data-count="<?=$project['input_price']?>" data-status="yes" data-text="NGN">0</span>
-        	<p>Price of project</p>
+        	<!-- <span class="odometer"brabus data-count="100" data-status="yes" data-text="NGN">0</span>
+        	<p>Price of project</p> -->
+
+          <?=previewBodyWithElipsces($project['text_body'], 40)?>
 
         </div>
         <!-- end property-infos -->
