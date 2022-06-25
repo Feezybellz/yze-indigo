@@ -46,11 +46,11 @@
       <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.10s">
         <ul class="footer-menu">
           <li><a href="/home">HOME</a></li>
-          <li><a href="/project">APARTMENT</a></li>
+          <li><a href="/project">PROJECT</a></li>
           <!-- <li><a href="/facilities">FACILITIES</a></li> -->
           <li><a href="/team">OUR TEAM</a></li>
           <li><a href="/gallery">GALLERY</a></li>
-          
+
         </ul>
       </div>
       <!-- end col-2 -->
