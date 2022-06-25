@@ -30,7 +30,7 @@ if (count($project) > 0) {
        }
  @media (max-width: 480px) {
           .btn-responsive {
-              margin-top:20px btn-responsive;
+              margin-top:20px;
           }
       }
   </style>
