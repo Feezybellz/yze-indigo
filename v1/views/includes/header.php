@@ -49,6 +49,10 @@ $page_title = isset($page_title) ? ("- ".$page_title) : "";
 <link href="/asset/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
 <link href="/asset/ico/favicon.png" rel="shortcut icon">
 
+<link rel="stylesheet" type="text/css" href="/real3dflip/deploy/css/flipbook.style.css">
+<link rel="stylesheet" type="text/css" href="/real3dflip/deploy/css/font-awesome.css">
+
+
 <!-- CSS FILES -->
 <link rel="stylesheet" href="/asset/css/fontawesome.min.css">
 <link rel="stylesheet" href="/asset/css/animate.min.css">
@@ -57,6 +61,9 @@ $page_title = isset($page_title) ? ("- ".$page_title) : "";
 <link rel="stylesheet" href="/asset/css/swiper.min.css">
 <link rel="stylesheet" href="/asset/css/bootstrap.min.css">
 <link rel="stylesheet" href="/asset/css/style.css">
+
+
+
 
 
     <?php

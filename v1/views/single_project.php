@@ -22,6 +22,18 @@ if (count($project) > 0) {
  include 'includes/header.php';
   ?>
 
+  <style media="screen">
+  @media (max-width: 480px) {
+           .mck-responsive {
+               height:auto;
+           }
+       }
+  </style>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+
+
 <!-- end navbar -->
 <header class="page-header" data-background="<?=$banner?>" data-stellar-background-ratio="1.15">
   <div class="container">
@@ -73,13 +85,13 @@ if (count($project) > 0) {
 
       <!-- end col-4 -->
       <style media="screen">
-        .linnk a{
+        .linnk{
           border: 2px solid #CCB034;
-          padding: 10px 35px 10px 35px;
+          padding: 10px 35px;
           font-size: 20px;
           color: #CCB034;
         }
-        .linnk a:hover{
+        .linnk:hover{
           text-decoration: none;
           background: #CCB034;
           border-color: #CCB034;
@@ -88,17 +100,8 @@ if (count($project) > 0) {
       </style>
 
   </div>
-  <!-- <div class="linnk row col-md-12">
-    <div class="col-md-4">
-      <a href="#">DOWNLOAD BROCURE <i class="fas fa-caret-right"></i></a>
-    </div>
-    <div class="col-md-4">
-      <a href="/faq">VIEW FAQ <i class="fas fa-caret-right"></i></a>
-    </div>
-    <div class="col-md-4">
-      <a href="#">SUBSCRIPTION FORM <i class="fas fa-caret-right"></i></a>
-    </div>
-  </div> -->
+
+
        <!-- end gallery-container -->
        </div>
        <!-- end gallery-slider -->
@@ -108,94 +111,55 @@ if (count($project) > 0) {
     <!-- end row -->
   </div>
   <!-- end container -->
+
+
 </section>
+
 <!-- end apartment -->
-<!-- <section class="property-customization pt-5 pb-5 p-2">
-  <div class="video-bg">
+<section class="property-customization pt-5 pb-5 p-2">
+  <!-- <div class="video-bg">
     <video src="asset/videos/video01.mp4" loop autoplay muted></video>
   </div>
-  end video-bg
-  <div class="container">
-    <div class="row">
-      end col-12
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0s">
-        <figure data-toggle="tooltip" data-placement="top" title="The smaller male cones release pollen, which fertilizes"> <img src="/asset/images/services-icon01.png" alt="Image">
-          <figcaption>Water Taps</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.05s">
-        <figure data-toggle="tooltip" data-placement="top" title="The smaller male cones release pollen, which fertilizes"> <img src="/asset/images/services-icon02.png" alt="Image">
-          <figcaption>Furniture</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.10s">
-        <figure data-toggle="tooltip" data-placement="top" title="The smaller male cones release pollen, which fertilizes"> <img src="/asset/images/services-icon03.png" alt="Image">
-          <figcaption>Electricity</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.15s">
-        <figure data-toggle="tooltip" data-placement="top" title="The smaller male cones release pollen, which fertilizes"> <img src="/asset/images/services-icon04.png" alt="Image">
-          <figcaption>Wood Edition</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.20s">
-        <figure> <img src="/asset/images/services-icon05.png" alt="Image">
-          <figcaption>Ceramics</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.25s">
-        <figure> <img src="/asset/images/services-icon06.png" alt="Image">
-          <figcaption>Pipelines</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0s">
-        <figure> <img src="/asset/images/services-icon07.png" alt="Image">
-          <figcaption>Cimento</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.05s">
-        <figure> <img src="/asset/images/services-icon08.png" alt="Image">
-          <figcaption>Hummer</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.10s">
-        <figure> <img src="/asset/images/services-icon09.png" alt="Image">
-          <figcaption>Digging</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.15s">
-        <figure> <img src="/asset/images/services-icon10.png" alt="Image">
-          <figcaption>Raiser</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.20s">
-        <figure> <img src="/asset/images/services-icon11.png" alt="Image">
-          <figcaption>Screwsrive</figcaption>
-        </figure>
-      </div>
-      end col-2
-      <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0.25s">
-        <figure> <img src="/asset/images/services-icon12.png" alt="Image">
-          <figcaption>Blueprint</figcaption>
-        </figure>
-      </div>
-      end col-2
-    </div>
-    end row
+  end video-bg -->
+  <div class="container mck-responsive" id="fileViewer" style="height:80vh">
+    <!-- <div class="row" style="height:500px"> -->
+
+        <div id="projFile1"/>
+    <!-- </div> -->
   </div>
-  <br>
-  end container
-</section> -->
+</section>
 <!-- end property-customization -->
 
+<section class="property-customization" style="background:transparent">
+  <div class="container d-flex justify-content-center">
+    <div class="row d-flex justify-content-center">
+      <!-- <div class="col-md-4">
+        <a href="#">DOWNLOAD BROCURE <i class="fas fa-caret-right"></i></a>
+      </div> -->
+      <div class="col-md-6">
+        <a class="btn btn-primary" style="color:white; background-color:#CCB034; border:2px solid #CCB034;" href="<?=$project['input_faq_link']?>">VIEW FAQ <i class="fas fa-caret-right"></i></a>
+      </div>
+      <div class="col-md-6">
+        <a class="btn btn-primary" style="color:white; background-color:#CCB034; border:2px solid #CCB034;" href="<?=$project['input_subscription_form_link']?>">SUBSCRIPTION FORM <i class="fas fa-caret-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
 <?php include 'includes/footer.php'; ?>
+
+<script src="/real3dflip/deploy/js/flipbook.min.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+  // console.log($("#book1"))
+  $("#projFile1").flipBook({
+    // pdfUrl:'//www.indigodevelopments.com/_files/ugd/f844ed_cb55094cbe9f4ab0b0feaeae18c75157.pdf'
+    pdfUrl:'<?=$project['input_brochure_link']?>'
+  })
+
+  // fileViewer.style.height = "auto";
+  // fileViewer.style.clear = "both";
+})
+</script>
