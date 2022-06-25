@@ -28,6 +28,11 @@ if (count($project) > 0) {
                height:auto;
            }
        }
+ @media (max-width: 480px) {
+          .btn-responsive {
+              margin-top:20px btn-responsive;
+          }
+      }
   </style>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
@@ -59,7 +64,7 @@ if (count($project) > 0) {
         	<!-- <span class="odometer"brabus data-count="100" data-status="yes" data-text="NGN">0</span>
         	<p>Price of project</p> -->
 
-          <?=previewBodyWithElipsces($project['text_body'], 40)?>
+          <?=previewBodyWithElipsces($project['text_body'], 50)?>
 
         </div>
         <!-- end property-infos -->
@@ -139,10 +144,10 @@ if (count($project) > 0) {
         <a href="#">DOWNLOAD BROCURE <i class="fas fa-caret-right"></i></a>
       </div> -->
       <div class="col-md-6">
-        <a class="btn btn-primary" style="color:white; background-color:#CCB034; border:2px solid #CCB034;" href="<?=$project['input_faq_link']?>">VIEW FAQ <i class="fas fa-caret-right"></i></a>
+        <a class="btn btn-primary btn-responsive" style="color:white; background-color:#CCB034; border:2px solid #CCB034;" href="<?=$project['input_faq_link']?>">VIEW FAQ <i class="fas fa-caret-right"></i></a>
       </div>
       <div class="col-md-6">
-        <a class="btn btn-primary" style="color:white; background-color:#CCB034; border:2px solid #CCB034;" href="<?=$project['input_subscription_form_link']?>">SUBSCRIPTION FORM <i class="fas fa-caret-right"></i></a>
+        <a class="btn btn-primary btn-responsive" style="color:white; background-color:#CCB034; border:2px solid #CCB034;" href="<?=$project['input_subscription_form_link']?>">SUBSCRIPTION FORM <i class="fas fa-caret-right"></i></a>
       </div>
     </div>
   </div>
