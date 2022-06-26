@@ -37,21 +37,24 @@ $banner = $projects[0]['image_2'];
 
           <!-- end col-4 -->
           <div class="col-lg-4 col-md-6">
-            <div class="" style="width:100%; height: auto;background-image: url('<?=$value['image_2']?>'); background-repeat: no-repeat; background-position: center; background-size:cover;">
+            <!-- <div class=""> -->
+              <div class="" style="width:100%; height: auto;background-image: url('<?=$value['image_2']?>'); background-repeat: no-repeat; background-position: center; background-size:cover;">
 
-              <img src="<?=$value['image_2']?>" style="visibility:hidden" alt="">
-            </div>
-            <div class="office-box">
-              <h5><?=$value['input_title']?></h5>
-              <!-- <br> -->
-              <div class="row p-2">
-                <span class="pr-4"><small class="fa fa-map-marker" style="color: #CCB034"></small> <?=$value['input_location']?></span>
-                <span class=""><small class="fa fa-calendar" style="color: #CCB034"></small> <?=decodeDate($value['dated_project_date'])?></span>
+                <img src="<?=$value['image_2']?>" style="visibility:hidden" alt="">
               </div>
-              <div class="pb-3">
-                <a href="/view-project?id=<?=$value['hash_id']?>" style="background-color: #CCB034">VIEW PROJECT</a>
+              <div class="office-box" style="margin-top:-1px;">
+                <h5><?=$value['input_title']?></h5>
+                <!-- <br> -->
+                <div class="row p-2">
+                  <span class="pr-4"><small class="fa fa-map-marker" style="color: #CCB034"></small> <?=$value['input_location']?></span>
+                  <span class=""><small class="fa fa-calendar" style="color: #CCB034"></small> <?=decodeDate($value['dated_project_date'])?></span>
+                </div>
+                <div class="pb-3">
+                  <a href="/view-project?id=<?=$value['hash_id']?>" style="background-color: #CCB034">VIEW PROJECT</a>
+                </div>
               </div>
-            </div>
+
+            <!-- </div> -->
           </div>
           <!-- end col-4 -->
 
