@@ -37,7 +37,10 @@ $banner = $projects[0]['image_2'];
 
           <!-- end col-4 -->
           <div class="col-lg-4 col-md-6">
-            <img src="<?=$value['image_2']?>" alt="">
+            <div class="" style="width:100%; height: auto;background-image: url('<?=$value['image_2']?>'); background-repeat: no-repeat; background-position: center; background-size:cover;">
+
+              <img src="<?=$value['image_2']?>" style="visibility:hidden" alt="">
+            </div>
             <div class="office-box">
               <h5><?=$value['input_title']?></h5>
               <!-- <br> -->
