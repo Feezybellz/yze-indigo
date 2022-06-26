@@ -123,53 +123,135 @@ if (count($project) > 0) {
 </section>
 
 <!-- end apartment -->
-<section class="property-customization pt-5 pb-5 p-2">
-  <!-- <div class="video-bg">
+<!-- <section class="property-customization pt-5 pb-5 p-2">
+  <div class="video-bg">
     <video src="asset/videos/video01.mp4" loop autoplay muted></video>
   </div>
-  end video-bg -->
+  end video-bg
   <div class="container mck-responsive" id="fileViewer" style="height:80vh">
-    <!-- <div class="row" style="height:500px"> -->
+    <div class="row" style="height:500px">
 
         <div id="projFile1"/>
-    <!-- </div> -->
+    </div>
   </div>
-</section>
+</section> -->
 <!-- end property-customization -->
 
 <section class="property-customization" style="background:transparent">
   <div class="container d-flex justify-content-center">
-    <div class="row d-flex justify-content-center">
-      <!-- <div class="col-md-4">
+    <!-- <div class="row d-flex justify-content-center">
+      <div class="col-md-4">
         <a href="#">DOWNLOAD BROCURE <i class="fas fa-caret-right"></i></a>
-      </div> -->
+      </div>
       <div class="col-md-6">
         <a class="btn btn-primary btn-responsive" style="color:white; background-color:#CCB034; border:2px solid #CCB034;" href="<?=$project['input_faq_link']?>">VIEW FAQ <i class="fas fa-caret-right"></i></a>
       </div>
       <div class="col-md-6">
         <a class="btn btn-primary btn-responsive" style="color:white; background-color:#CCB034; border:2px solid #CCB034;" href="<?=$project['input_subscription_form_link']?>">SUBSCRIPTION FORM <i class="fas fa-caret-right"></i></a>
       </div>
+    </div> -->
+<style media="screen">
+  .mck-btn{
+    background-color: #CCB034;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  .mck-btn:hover{
+    background-color: #fff;
+    border: 2px solid #CCB034;
+    color: #CCB034;
+  }
+</style>
+    <div class="btn-group mx-auto" role="group" aria-label="Basic example">
+      <?php if ($project['input_faq_link']): ?>
+
+        <button type="button" class="btn mck-btn" data-toggle="modal" data-target="#myModal" data-title="Book" data-pdf="<?=$project['input_faq_link']?>" onclick="displayPdf(this)">VIEW FAQ </button>
+      <?php endif; ?>
+
+      <?php if ($project['input_subscription_form_link']): ?>
+
+        <button type="button" class="btn mck-btn" data-toggle="modal" data-target="#myModal" data-title="Book" data-pdf="<?=$project['input_subscription_form_link']?>" onclick="displayPdf(this)">SUBSCRIPTION FORM </button>
+      <?php endif; ?>
+
+      <?php if ($project['input_brochure_link']): ?>
+
+        <button type="button" class="btn mck-btn" data-toggle="modal" data-target="#myModal" data-title="Book" data-pdf="<?=$project['input_brochure_link']?>" onclick="displayPdf(this)">BROCHURE</button>
+      <?php endif; ?>
     </div>
   </div>
 </section>
+
+
+
+
+<!-- The Modal -->
+<div class="modal fade right" id="myModal">
+  <div class="modal-dialog modal-dialog-full-width modal-xl">
+    <div class="modal-content" style="height:90vh;">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalTitle">Title...</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" id="modalBody">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- <div class="" id="bookBrochure">
+
+</div>
+
+
+<div class="" id="bookBrochure">
+
+</div>
+
+
+<div class="" id="book">
+
+</div> -->
 <?php include 'includes/footer.php'; ?>
 
 <script src="/real3dflip/deploy/js/flipbook.min.js"></script>
 
 
-<?php if ($project['input_brochure_link']): ?>
+<?php //if ($project['input_brochure_link']): ?>
 
   <script type="text/javascript">
 
-  $(document).ready(function () {
-    // console.log($("#book1"))
-    $("#projFile1").flipBook({
+  // $(document).ready(function () {
+  //   // console.log($("#book1"))
+  //   $("#bookBrochure").flipBook({
+  //     // pdfUrl:'//www.indigodevelopments.com/_files/ugd/f844ed_cb55094cbe9f4ab0b0feaeae18c75157.pdf'
+  //     pdfUrl:'<?=$project['input_brochure_link']?>'
+  //   })
+  //
+  // })
+
+  function displayPdf(e){
+    var pdfFile = e.dataset.pdf;
+    modalTitle.innerHTML = e.dataset.title;
+    $("#modalBody").flipBook({
       // pdfUrl:'//www.indigodevelopments.com/_files/ugd/f844ed_cb55094cbe9f4ab0b0feaeae18c75157.pdf'
-      pdfUrl:'<?=$project['input_brochure_link']?>'
+      // pdfUrl:'<?=$project['input_brochure_link']?>'
+      pdfUrl: pdfFile
     })
 
-    // fileViewer.style.height = "auto";
-    // fileViewer.style.clear = "both";
-  })
+  }
 </script>
-<?php endif; ?>
+<?php //endif; ?>
