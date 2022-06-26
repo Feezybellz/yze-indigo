@@ -14,7 +14,7 @@ $banner = $projects[0]['image_2'];
   ?>
 
 <!-- end navbar -->
-<header class="page-header" data-background="<?=$banner?>" data-stellar-background-ratio="1.15">
+<header class="page-header" data-background="<?=$banner?>" data-stellar-background-ratio="1.15" style="background-repeat:none; background-size:cover;">
   <div class="container">
     <h1>Project</h1>
       <!-- <p>Newly listed properties</p> -->

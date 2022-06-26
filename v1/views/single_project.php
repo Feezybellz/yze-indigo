@@ -40,7 +40,7 @@ if (count($project) > 0) {
 
 
 <!-- end navbar -->
-<header class="page-header" data-background="<?=$banner?>" data-stellar-background-ratio="1.15">
+<header class="page-header" data-background="<?=$banner?>" data-stellar-background-ratio="1" style="background-repeat:none; background-size:cover;">
   <div class="container">
     <h1><?=$project['input_title']?></h1>
     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inc</p> -->

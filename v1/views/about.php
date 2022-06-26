@@ -5,7 +5,7 @@ $page_title = "About";
 
 include 'includes/header.php'; ?>
 
-<header class="page-header" data-background="<?=$about['image_1']?>" data-stellar-background-ratio="1.15">
+<header class="page-header" data-background="<?=$about['image_1']?>" data-stellar-background-ratio="1.15" style="background-repeat:none; background-size:cover;">
 	<div class="container">
 		<h1>About Us</h1>
 		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p> -->
