@@ -146,7 +146,8 @@ $page_title = isset($page_title) ? ("- ".$page_title) : "";
           <!-- <img src="/asset/images/icon-phone.png" alt="Image"> -->
         </h5>
         <small>
-          <span class="fa fa-envelope"></span> &nbsp; &nbsp; <a href="mailto:<?=$site_email?>"><?=$site_email?></a>
+          <!-- <span class="fa fa-envelope"></span> &nbsp; &nbsp;  -->
+          <a href="mailto:<?=$site_email?>"><?=$site_email?></a>
         </small>
       </div>
       <!-- end phone -->

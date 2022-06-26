@@ -14,7 +14,7 @@ include 'includes/header.php';
  ?>
 
 <!-- end navbar -->
-<header class="page-header" data-background="asset/images/slide01.jpg" data-stellar-background-ratio="1.15">
+<header class="page-header" data-background="asset/images/slide01.jpg" data-stellar-background-ratio="1.15" style="background-repeat:none; background-size:cover;">
 	<div class="container">
 		<h1>FAQ</h1>
 		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inc</p> -->

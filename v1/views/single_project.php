@@ -245,7 +245,7 @@ if (count($project) > 0) {
 
   function displayPdf(e){
     var pdfFile = e.dataset.pdf;
-    modalTitle.innerHTML = e.dataset.title;
+    modalTitle.innerHTML = e.innerText;
     $("#modalBody").flipBook({
       // pdfUrl:'//www.indigodevelopments.com/_files/ugd/f844ed_cb55094cbe9f4ab0b0feaeae18c75157.pdf'
       // pdfUrl:'<?=$project['input_brochure_link']?>'
