@@ -243,6 +243,8 @@ if (count($project) > 0) {
 
       <!-- Modal footer -->
       <div class="modal-footer">
+        <a id="downloadFile" type="button" class="btn btn-primary" data-dismiss="modal" target="_blank">Download <span class="fa fa-download"></span> </a>
+
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
 
@@ -284,6 +286,7 @@ if (count($project) > 0) {
   function displayPdf(e){
     var pdfFile = e.dataset.pdf;
     modalTitle.innerHTML = e.innerText;
+    downloadFile.href = pdfFile;
     $("#modalBody").flipBook({
       // pdfUrl:'//www.indigodevelopments.com/_files/ugd/f844ed_cb55094cbe9f4ab0b0feaeae18c75157.pdf'
       // pdfUrl:'<?=$project['input_brochure_link']?>'
