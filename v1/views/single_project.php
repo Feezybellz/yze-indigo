@@ -123,32 +123,6 @@ if (count($project) > 0) {
        <!-- end gallery-container -->
        </div>
 
-       <?php if ($projectAmenitiesAvailable): ?>
-       <div class="container" style="margin-top:5px;">
-         <h4 class="text-center ">Amenities & Facilities</h4>
-         <div class="row  d-flex justify-content-center justify-content-md-center">
-
-             <?php foreach ($projectAmenities as $key => $value): ?>
-               <div class="col-lg-3 col-6  d-flex justify-content-center justify-content-md-center">
-                 <div class="text-center">
-
-                   <!-- <img src="/asset/images/icon-benefits01.png" alt="Image"> <b></b> -->
-                   <span class="fa <?=$value['icon_icon']?>" style="font-size:35px"></span>
-                   <!-- <b></b> -->
-                   <br>
-                   <p><?=$value['input_title']?></p>
-                 </div>
-               </div>
-
-               <!-- <div class="col-lg-3 col-6">
-
-                 <span class="fa <?=$value['icon_icon']?>" style="font-size:35px"></span> <b></b>
-               </div> -->
-
-             <?php endforeach; ?>
-         </div>
-       </div>
-     <?php endif; ?>
        <!-- end gallery-slider -->
       <!-- </div> -->
       <!-- en col-12 -->
@@ -159,6 +133,43 @@ if (count($project) > 0) {
 
 
 </section>
+
+<?php if ($projectAmenitiesAvailable): ?>
+
+  <section class="property-customization">
+  <div class="video-bg">
+    <video src="/uploads/amenities-video.mp4" loop="" autoplay="" muted=""></video>
+  </div>
+  <!-- end video-bg -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <!-- <b>08</b> -->
+        <!-- <h4><span>Homepark</span> Living Spaces</h4> -->
+        <h3>Amenities and Facilities</h3>
+      </div>
+      <!-- end col-12 -->
+
+      <?php foreach ($projectAmenities as $key => $value): ?>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;">
+          <figure data-toggle="tooltip" data-placement="top" title="" data-original-title="The smaller male cones release pollen, which fertilizes">
+            <!-- <img src="images/services-icon01.png" alt="Image"> -->
+            <span class="fa <?=$value['icon_icon']?>" style="font-size:35px"></span>
+            <!-- <p><?=$value['input_title']?></p> -->
+            <figcaption style="margin-left:5px;"><?=$value['input_title']?></figcaption>
+          </figure>
+        </div>
+        <!-- end col-2 -->
+      <?php endforeach; ?>
+
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+
+<?php endif; ?>
 
 <!-- end apartment -->
 <!-- <section class="property-customization pt-5 pb-5 p-2">
@@ -243,7 +254,7 @@ if (count($project) > 0) {
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <a id="downloadFile" type="button" class="btn btn-primary" data-dismiss="modal" target="_blank">Download <span class="fa fa-download"></span> </a>
+        <a id="downloadFile" type="button" class="btn btn-primary" target="_blank" download>Download <span class="fa fa-download"></span> </a>
 
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
