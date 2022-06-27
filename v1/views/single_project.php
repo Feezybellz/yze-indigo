@@ -125,7 +125,7 @@ if (count($project) > 0) {
 
        <?php if ($projectAmenitiesAvailable): ?>
        <div class="container" style="margin-top:5px;">
-         <h4 class="text-center ">Amenities & Facilitiess</h4>
+         <h4 class="text-center ">Amenities & Facilities</h4>
          <div class="row  d-flex justify-content-center justify-content-md-center">
 
              <?php foreach ($projectAmenities as $key => $value): ?>
