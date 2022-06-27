@@ -18,7 +18,7 @@ $banner = $projects[0]['image_2'];
   <div class="container">
     <h1>Project</h1>
       <!-- <p>Newly listed properties</p> -->
-      <p>Find your dream home from our Newly added properties</p>
+      <!-- <p>Find your dream home from our Newly added properties</p> -->
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/home">Home</a></li>
       <li class="breadcrumb-item active text-white" aria-current="page">Project</li>

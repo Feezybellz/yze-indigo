@@ -43,7 +43,7 @@ include 'includes/header.php';
 <header class="page-header" data-background="<?=$banner?>" data-stellar-background-ratio="1.15" style="background-repeat:none; background-size:cover;">
   <div class="container">
     <h1>Photo Gallery</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inc</p>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inc</p> -->
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/home">Home</a></li>
       <li class="breadcrumb-item active text-white" aria-current="page">Photo Gallery</li>

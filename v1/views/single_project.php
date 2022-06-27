@@ -65,9 +65,9 @@ if (count($project) > 0) {
     <div class="row">
       <div class="row col-md-12">
         <h2><span><?=$project['input_title']?></span></h2>
-        <h5>
+        <!-- <h5>
           By aiming to take the life quality to an upper level with the whole realized Projects of luxury.
-        </h5>
+        </h5> -->
         <div class="property-infos col-md-4">
         	<span style="font-size:25px; font-weight:bold;" class="" data-count="<?=decodeDate($project['dated_project_date'])?>"><?=decodeDate($project['dated_project_date'])?></span>
         	<p>Project Date</p>
