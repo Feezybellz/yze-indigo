@@ -69,12 +69,43 @@ if (count($project) > 0) {
           By aiming to take the life quality to an upper level with the whole realized Projects of luxury.
         </h5>
         <div class="property-infos col-md-4">
-        	<span style="font-size:25px; font-weight:bold;"><?=decodeDate($project['dated_project_date'])?></span>
-        	<p>Project Date</p>
+          <?php if ($project['input_project_type']): ?>
+            <span style="font-weight:bold;"><?=$project['input_project_type']?></span>
+            <p>Project Type</p>
+            <br>
+          <?php endif ?>
 
-          <br>
-          <span style="font-size:25px; font-weight:bold;"><?=$project['input_location']?></span>
-        	<p>Project Location</p>
+          <?php if ($project['input_plots_available']): ?>
+            <span style="font-weight:bold;"><?=$project['input_plots_available']?></span>
+            <p>Plots Available</p>
+            <br>
+          <?php endif ?>
+
+          <?php if ($project['input_title_document']): ?>
+            <span style="font-weight:bold;"><?=$project['input_title_document']?></span>
+            <p>Title Document</p>
+            <br>
+          <?php endif ?>
+
+          <?php if ($project['input_estate_land_area']): ?>
+            <span style="font-weight:bold;"><?=$project['input_estate_land_area']?></span>
+            <p>Estate Land Area</p>
+            <br>
+          <?php endif ?>
+
+          <?php if ($project['input_infrastructure_development_period']): ?>
+            <span style="font-weight:bold;"><?=$project['input_infrastructure_development_period']?></span>
+            <p>Infrastructure Development Period</p>
+            <br>
+          <?php endif ?>
+
+          <?php if ($project['input_location']): ?>
+            <span style="font-weight:bold;"><?=$project['input_location']?></span>
+            <p>Project Location</p>
+            <br>
+          <?php endif ?>
+          
+        	
 
           <?php //=previewBodyWithElipsces($project['text_body'], 50)?>
 

@@ -34,32 +34,33 @@ $banner = $projects[0]['image_2'];
       <?php if ($availableProjects): ?>
 
         <?php foreach ($projects as $key => $value): ?>
+            <!-- <a href="/view-project?id=<?=$value['hash_id']?>"> -->
 
           <!-- end col-4 -->
-          <div class="col-lg-4 col-md-6">
-            <a href="/view-project?id=<?=$value['hash_id']?>">
-              <!-- <div class=""> -->
-              <div class="" style="width:100%; height: 400px;background-image: url('<?=$value['thumbnail'] ?? $value['image_2']?>'); background-repeat: no-repeat; background-position: center; background-size:cover;">
+              <div class="col-lg-4 col-md-6">
+                  <!-- <div class=""> -->
+                  <div class="" style="width:100%; height: 400px;background-image: url('<?=$value['thumbnail'] ?? $value['image_2']?>'); background-repeat: no-repeat; background-position: center; background-size:cover;">
 
-                <img src="<?=$value['thumbnail'] ?? $value['image_2']?>" style="visibility:hidden" alt="">
-              </div>
-              <div class="office-box" style="margin-top:-1px;">
-                <h5><?=$value['input_title']?></h5>
-                <!-- <br> -->
-                <div class="row p-2">
-                  <span class="pr-4"><small class="fa fa-map-marker" style="color: #CCB034"></small> <?=$value['input_location']?></span>
-                  <span class=""><small class="fa fa-calendar" style="color: #CCB034"></small> <?=decodeDate($value['dated_project_date'])?></span>
-                </div>
-                <div class="pb-3">
-                  <a href="/view-project?id=<?=$value['hash_id']?>" style="background-color: #CCB034">VIEW PROJECT</a>
-                </div>
-              </div>
+                    <img src="<?=$value['thumbnail'] ?? $value['image_2']?>" style="visibility:hidden" alt="">
+                  </div>
+                  <div class="office-box" style="margin-top:-1px;">
+                    <h5><?=$value['input_title']?></h5>
+                    <!-- <br> -->
+                    <div class="row p-2">
+                      <span class="pr-4"><small class="fa fa-map-marker" style="color: #<?=$style_color?>"></small> <?=$value['input_location']?></span>
+                      <span class=""><small class="fa fa-home" style="color: #CCB034"></small> <?=$value['input_project_type']?></span>
+                    </div>
+                    <br>
+                    <div class="pb-3">
+                      <a href="/view-project?id=<?=$value['hash_id']?>" style="background-color: #<?=$style_color?>">VIEW PROJECT</a>
+                    </div>
+                  </div>
 
-            <!-- </div> -->
-            </a>
-            
-          </div>
-          <!-- end col-4 -->
+                <!-- </div> -->
+                
+              </div>
+              <!-- end col-4 -->
+            <!-- </a> -->
 
         <?php endforeach; ?>
       <?php else: ?>
