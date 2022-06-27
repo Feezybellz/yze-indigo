@@ -43,11 +43,11 @@ $page_title = isset($page_title) ? ("- ".$page_title) : "";
 <?php  }?>
 
 <!-- FAVICON FILES -->
-<link href="/asset/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
-<link href="/asset/ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
-<link href="/asset/ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
-<link href="/asset/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
-<link href="/asset/ico/favicon.png" rel="shortcut icon">
+<link href="<?=$logo_directory?>" rel="apple-touch-icon" sizes="144x144">
+<link href="<?=$logo_directory?>" rel="apple-touch-icon" sizes="114x114">
+<link href="<?=$logo_directory?>" rel="apple-touch-icon" sizes="72x72">
+<link href="<?=$logo_directory?>" rel="apple-touch-icon">
+<link href="<?=$logo_directory?>" rel="shortcut icon">
 
 <link rel="stylesheet" type="text/css" href="/real3dflip/deploy/css/flipbook.style.css">
 <link rel="stylesheet" type="text/css" href="/real3dflip/deploy/css/font-awesome.css">
