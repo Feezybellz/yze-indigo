@@ -110,9 +110,9 @@ if (count($uri) > 2) {
   include APP_PATH."/views/404.php";
   break;
 
-  default:
-  include APP_PATH."/views/404.php";
-  break;
+  // default:
+  // include APP_PATH."/views/404.php";
+  // break;
 }
 
 
