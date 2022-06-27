@@ -10,6 +10,14 @@ if (count($project) > 0) {
 
   $projectGallery = selectContent($conn, "images", ['asset_hash_id' => $hash_id]);
 
+  $projectAmenities = selectContent($conn, "addition_amenities_and_facilities", ['tb_link' => $hash_id]);
+
+  if (count($projectAmenities) > 0) {
+    $projectAmenitiesAvailable = true;
+  }else{
+    $projectAmenitiesAvailable = false;
+  }
+
   if(count($projectGallery) > 0){
     $availableProjectGallery = true;
   }else{
@@ -61,10 +69,14 @@ if (count($project) > 0) {
           By aiming to take the life quality to an upper level with the whole realized Projects of luxury.
         </h5>
         <div class="property-infos col-md-4">
-        	<!-- <span class="odometer"brabus data-count="100" data-status="yes" data-text="NGN">0</span>
-        	<p>Price of project</p> -->
+        	<span style="font-size:25px; font-weight:bold;" class="" data-count="<?=decodeDate($project['dated_project_date'])?>"><?=decodeDate($project['dated_project_date'])?></span>
+        	<p>Project Date</p>
 
-          <?=previewBodyWithElipsces($project['text_body'], 50)?>
+          <br>
+          <span style="font-size:25px; font-weight:bold;" class="" data-count="<?=$project['input_location']?>"><?=$project['input_location']?></span>
+        	<p>Project Location</p>
+
+          <?php //=previewBodyWithElipsces($project['text_body'], 50)?>
 
         </div>
         <!-- end property-infos -->
@@ -108,15 +120,41 @@ if (count($project) > 0) {
 
   </div>
 
-
        <!-- end gallery-container -->
        </div>
+
+       <?php if ($projectAmenitiesAvailable): ?>
+       <div class="container" style="margin-top:5px;">
+         <h4 class="text-center ">Amenities & Facilitiess</h4>
+         <div class="row  d-flex justify-content-center justify-content-md-center">
+
+             <?php foreach ($projectAmenities as $key => $value): ?>
+               <div class="col-lg-3 col-6  d-flex justify-content-center justify-content-md-center">
+                 <div class="text-center">
+
+                   <!-- <img src="/asset/images/icon-benefits01.png" alt="Image"> <b></b> -->
+                   <span class="fa <?=$value['icon_icon']?>" style="font-size:35px"></span>
+                   <!-- <b></b> -->
+                   <br>
+                   <p><?=$value['input_title']?></p>
+                 </div>
+               </div>
+
+               <!-- <div class="col-lg-3 col-6">
+
+                 <span class="fa <?=$value['icon_icon']?>" style="font-size:35px"></span> <b></b>
+               </div> -->
+
+             <?php endforeach; ?>
+         </div>
+       </div>
+     <?php endif; ?>
        <!-- end gallery-slider -->
-      </div>
+      <!-- </div> -->
       <!-- en col-12 -->
-    </div>
+    <!-- </div> -->
     <!-- end row -->
-  </div>
+  <!-- </div> -->
   <!-- end container -->
 
 
