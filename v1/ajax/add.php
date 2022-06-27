@@ -1,4 +1,6 @@
 <?php
+
+die("here");
 // header("Content-Security-Policy: default-src 'none';");
 // header("Access-Control-Allow-Origin: http://192.168.33.23/test.php");
 $request_headers = getallheaders();
