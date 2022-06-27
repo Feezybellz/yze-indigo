@@ -7,7 +7,7 @@ include 'includes/header.php';
 <header class="page-header" data-background="asset/images/slide01.jpg" data-stellar-background-ratio="1.15">
 	<div class="container">
 		<h1>Our Team</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 		  <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/home">Home</a></li>
     <li class="breadcrumb-item active text-white" aria-current="page">Sales Team</li>
