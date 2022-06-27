@@ -5,7 +5,7 @@ $project = array_reverse(selectContent($conn, "panel_projects", ['visibility' =>
 
 if (count($project) > 0) {
   $project = $project[0];
-  $banner = $project['image_2'];
+  $banner = $project['thumnail'] ?? $project['image_2'];
   $page_title = $project['input_title'];
 
   $projectGallery = selectContent($conn, "images", ['asset_hash_id' => $hash_id]);
@@ -81,7 +81,7 @@ if (count($project) > 0) {
         </div>
         <!-- end property-infos -->
         <div class="col-md-7">
-          <img src="<?=$project['image_2']?>" alt="Image" class="">
+          <img src="<?=$project['thumnail'] ?? $project['image_2']?>" alt="Image" class="">
         </div>
       </div>
       <!-- end col-12 -->
