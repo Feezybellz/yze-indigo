@@ -76,12 +76,13 @@ $metaText = [
 
 
 
-include APP_PATH."/routes/router.php";
+
 include APP_PATH."/demo/demo_router/router.php";
 include APP_PATH."/ajax/ajax_router/router.php";
 include APP_PATH."/payment/payment_router/router.php";
 include APP_PATH."/auth/auth_router/router.php";
 include APP_PATH."/routes/ajax_router.php";
 include APP_PATH."/routes/admin_router.php";
+include APP_PATH."/routes/router.php";
 
  ?>
