@@ -86,12 +86,3 @@ include 'includes/header.php';
 <!-- end photo-gallery -->
 <?php include 'includes/footer.php'; ?>
 
-    	</div>
-    	<!-- end col-12 -->
-    </div>
-    <!-- end row -->
-  </div>
-  <!-- end container -->
-</section>
-<!-- end photo-gallery -->
-<?php include 'includes/footer.php'; ?>
