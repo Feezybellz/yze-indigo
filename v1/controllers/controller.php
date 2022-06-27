@@ -1,4 +1,6 @@
 <?php
+include "getallheaders.php";
+
 
 function byMckodevFooter($color = "#fff"){
   echo "Developed by <a href='https://mckodev.com.ng' style='color:$color'>Mckodev Tech Lab</a>";
