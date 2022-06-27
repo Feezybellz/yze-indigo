@@ -37,10 +37,11 @@ $banner = $projects[0]['image_2'];
 
           <!-- end col-4 -->
           <div class="col-lg-4 col-md-6">
-            <!-- <div class=""> -->
-              <div class="" style="width:100%; height: auto;background-image: url('<?=$value['image_2']?>'); background-repeat: no-repeat; background-position: center; background-size:cover;">
+            <a href="/view-project?id=<?=$value['hash_id']?>">
+              <!-- <div class=""> -->
+              <div class="" style="width:100%; height: 400px;background-image: url('<?=$value['thumbnail'] ?? $value['image_2']?>'); background-repeat: no-repeat; background-position: center; background-size:cover;">
 
-                <img src="<?=$value['image_2']?>" style="visibility:hidden" alt="">
+                <img src="<?=$value['thumbnail'] ?? $value['image_2']?>" style="visibility:hidden" alt="">
               </div>
               <div class="office-box" style="margin-top:-1px;">
                 <h5><?=$value['input_title']?></h5>
@@ -55,6 +56,8 @@ $banner = $projects[0]['image_2'];
               </div>
 
             <!-- </div> -->
+            </a>
+            
           </div>
           <!-- end col-4 -->
 
