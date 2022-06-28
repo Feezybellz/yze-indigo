@@ -38,7 +38,7 @@ include 'includes/header.php'; ?>
       <!-- end col-5 -->
       <!-- <section class="sales-offices"> -->
       <!-- </section> -->
-      <div class="container" style="margin-top: 15px;">
+      <div class="container" style="margin-top: 25px;">
 		    <div class="row">
 		      <div class="col-lg-4 col-md-6">
 		        <div class="office-box">
