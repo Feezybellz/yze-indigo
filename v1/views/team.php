@@ -23,7 +23,7 @@ include 'includes/header.php';
 
         <div class="col-md-6">
           <figure><img src="<?=$value['image_1']?>" alt="Image">
-            <figcaption>
+            <figcaption class="pl-2">
               <!-- <h4><span>John</span> Doe</h4> -->
               <h4><span><?=wordwrap($value['input_name'] ?? "", 10, '<br />')?></span></h4>
               <small><?=$value['input_title']?></small>
