@@ -178,7 +178,7 @@ if (count($project) > 0) {
       <?php foreach ($projectAmenities as $key => $value): ?>
 
         <div class="col-lg-2 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;">
-          <figure data-toggle="tooltip" data-placement="top" title="" data-original-title="The smaller male cones release pollen, which fertilizes">
+          <figure data-toggle="tooltip" data-placement="top" title="" data-original-title="<?=$input_title?>">
             <!-- <img src="images/services-icon01.png" alt="Image"> -->
             <span class="fa <?=$value['icon_icon']?>" style="font-size:35px"></span>
             <!-- <p><?=$value['input_title']?></p> -->

@@ -22,8 +22,8 @@ include 'includes/header.php';
       <?php foreach ($teams as $key => $value): ?>
 
         <div class="col-md-6">
-          <figure><img src="<?=$value['image_1']?>" alt="Image" class="pr-5">
-            <figcaption style="width:auto">
+          <figure><img src="<?=$value['image_1']?>" alt="Image">
+            <figcaption>
               <!-- <h4><span>John</span> Doe</h4> -->
               <h4><span><?=wordwrap($value['input_name'] ?? "", 10, '<br />')?></span></h4>
               <small><?=$value['input_title']?></small>

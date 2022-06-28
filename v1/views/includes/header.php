@@ -71,10 +71,6 @@ $page_title = isset($page_title) ? ("- ".$page_title) : "";
 <link rel="stylesheet" href="/da/assets/fonts/themify/themify.css">
 
 
-
-
-
-
     <?php
     if(isset($style_color)):?>
       <?php include "style.php";?>
