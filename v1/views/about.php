@@ -36,6 +36,8 @@ include 'includes/header.php'; ?>
         <img src="<?=$about['image_1']?>" alt="">
       </div>
       <!-- end col-5 -->
+      <!-- <section class="sales-offices"> -->
+      <!-- </section> -->
       <div class="container">
 		    <div class="row">
 		      <div class="col-lg-4 col-md-6">
@@ -48,7 +50,7 @@ include 'includes/header.php'; ?>
 		        <!-- end office-box --> 
 		      </div>
 		      <!-- end col-4 --> 
-
+		      <div class="col-lg-4 col-md-6">
 		       <div class="office-box">
 		          <h5>Our Mission</h5>
 		          <address>
@@ -59,6 +61,7 @@ include 'includes/header.php'; ?>
 		      </div>
 		      <!-- end col-4 --> 
 
+		      <div class="col-lg-4 col-md-6">
 		       <div class="office-box">
 		          <h5>Our Values</h5>
 		          <address>
