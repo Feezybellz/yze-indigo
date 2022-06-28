@@ -1,6 +1,8 @@
 <?php
 $hash_id = $_GET['id'];
 
+$availableProjectGallery = false;
+
 $project = array_reverse(selectContent($conn, "panel_projects", ['visibility' => 'show', 'hash_id' => $hash_id]));
 
 if (count($project) > 0) {
@@ -19,7 +21,15 @@ if (count($project) > 0) {
   }
 
   if(count($projectGallery) > 0){
-    $availableProjectGallery = true;
+
+    $mainImageKey = array_search($banner, array_column($projectGallery, 'image_1'));
+    unset($projectGallery[$mainImageKey]);
+
+    if (count($projectGallery) > 0) {
+          $availableProjectGallery = true;
+
+    }
+
   }else{
     $availableProjectGallery = false;
   }
