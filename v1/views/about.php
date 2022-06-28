@@ -35,8 +35,9 @@ include 'includes/header.php'; ?>
         <img src="<?=$about['image_1']?>" alt="">
       </div>
       <!-- end col-5 -->
-
-    	 <div class="col-md-6">
+      <div class="row" style="margin-top: 10px;">
+      	
+      	<div class="col-md-6">
         <h6>Vision</h6>
        		<p><?=$vision['text_body']?></p>
        </div>
@@ -45,6 +46,9 @@ include 'includes/header.php'; ?>
         <h6>Mission</h6>
        		<p><?=$mission['text_body']?></p>
        </div>
+
+      </div>
+    	 
 
 
 
