@@ -62,6 +62,15 @@ $page_title = isset($page_title) ? ("- ".$page_title) : "";
 <link rel="stylesheet" href="/asset/css/bootstrap.min.css">
 <link rel="stylesheet" href="/asset/css/style.css">
 
+<link rel="stylesheet" href="/da/assets/fonts/material/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="/da/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/da/assets/fonts/flag/css/flag-icon.min.css">
+<link rel="stylesheet" href="/da/assets/fonts/feather/css/feather.css">
+<link rel="stylesheet" href="/da/assets/fonts/datta/datta-icon.css">
+<link rel="stylesheet" href="/da/assets/fonts/simple-line-icons/simple-line-icon.css">
+<link rel="stylesheet" href="/da/assets/fonts/themify/themify.css">
+
+
 
 
 
