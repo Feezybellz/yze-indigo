@@ -82,7 +82,7 @@
         <!-- end contact-box -->
       </div>
       <!-- end col-4 -->
-      <div class="col-12"> <span class="copyright">© <?=date("Y")?> <?=$site_name?> | <?php byMckodevFooter()?></span></div>
+      <div class="col-12"> <span class="copyright">© <?=date("Y")?> <?=$site_name?></span> <span class="creation"><?php byMckodevFooter()?></span></div>
       <!-- end col-12 -->
     </div>
     <!-- end row -->

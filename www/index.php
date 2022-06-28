@@ -32,7 +32,9 @@ $workingHours = selectContent($conn, "read_working_hours", ['visibility' => 'sho
 $site_name = $websiteInfo[0]['input_name'];
 $site_email = $websiteInfo[0]['input_email'];
 $site_phone = $websiteInfo[0]['input_phone_number'];
+$site_phone_2 = $websiteInfo[0]['input_phone_number_2'];
 $site_address = $websiteInfo[0]['input_address'];
+$site_address_2 = $websiteInfo[0]['input_address_2'];
 $fbLink = $websiteInfo[0]['input_facebook'];
 $igLink = $websiteInfo[0]['input_instagram'];
 $linkedinLink = $websiteInfo[0]['input_linkedin'];

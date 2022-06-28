@@ -29,22 +29,22 @@ include 'includes/header.php';
               <small><?=$value['input_title']?></small>
               <ul>
                 <?php if ($value['input_linkedIn']): ?>
-                <li><a href="<?=$value['input_linkedIn']?>"><i class="fab fa-linkedin-in"></i>LINKEDIN</a></li>
+                <li><a href="<?=$value['input_linkedIn']?>" style="color:#<?=$style_color?>"><i class="fab fa-linkedin-in"></i>LINKEDIN</a></li>
                   
                 <?php endif ?>
 
                 <?php if ($value['input_facebook']): ?>
-                <li><a href="<?=$value['input_facebook']?>"><i class="fab fa-facebook"></i>FACEBOOK</a></li>
+                <li><a href="<?=$value['input_facebook']?>" style="color:#<?=$style_color?>"><i class="fab fa-facebook"></i>FACEBOOK</a></li>
                   
                 <?php endif ?>
 
                 <?php if ($value['input_twitter']): ?>
-                <li><a href="<?=$value['input_twiter']?>"><i class="fab fa-twitter"></i>TWITTER</a></li>
+                <li><a href="<?=$value['input_twitter']?>" style="color:#<?=$style_color?>"><i class="fab fa-twitter"></i>TWITTER</a></li>
                   
                 <?php endif ?>
 
                 <?php if ($value['input_instagram']): ?>
-                <li><a href="<?=$value['input_instagram']?>"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
+                <li><a href="<?=$value['input_instagram']?>" style="color:#<?=$style_color?>"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
                   
                 <?php endif ?>
 

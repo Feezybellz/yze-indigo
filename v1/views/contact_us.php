@@ -38,9 +38,9 @@ include 'includes/header.php';
           <strong>Visit Us</strong>
           <!-- <h5>Mainland Business Office</h5> -->
           <p><?=$site_address?></p>
-          <!-- <br>
-          <h5>Lekki Sales Office </h5>
-          <p>Km 18, Lekki Epe Expressway , Agungi, Lekki, Lagos, Nigeria</p> -->
+          <br>
+          <!-- <h5>Lekki Sales Office </h5> -->
+          <p><?=$site_address_2?></p>
         </address>
        </div>
         <!-- end col-3 -->
@@ -49,6 +49,7 @@ include 'includes/header.php';
           <strong>Say Hello</strong>
           <p><a href="mailto:<?=$site_email?>" style="color:#000"><?=$site_email?> <br> </a>
             <a href="tel:<?=$site_phone?>" style="color:#000"><?=$site_phone?></a>
+            <a href="tel:<?=$site_phone_2?>" style="color:#000"><?=$site_phone_2?></a>
           <!-- <br>+234 (0) 916 236 7382 -->
         </p>
         </address>

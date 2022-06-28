@@ -1,5 +1,7 @@
 <?php
 $about = selectContent($conn, "read_about", ['visibility' => 'show'])[0];
+$vision = selectContent($conn, "read_vision", ['visibility' => 'show'])[0];
+$mission = selectContent($conn, "read_mission", ['visibility' => 'show'])[0];
 
 $page_title = "About";
 
@@ -33,6 +35,16 @@ include 'includes/header.php'; ?>
         <img src="<?=$about['image_1']?>" alt="">
       </div>
       <!-- end col-5 -->
+
+    	 <div class="col-md-6">
+        <h6>Vision</h6>
+       		<p><?=$vision['text_body']?></p>
+       </div>
+
+       <div class="col-md-6">
+        <h6>Mission</h6>
+       		<p><?=$mission['text_body']?></p>
+       </div>
 
 
 
