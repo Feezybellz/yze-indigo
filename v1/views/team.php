@@ -28,8 +28,27 @@ include 'includes/header.php';
               <h4><span><?=wordwrap($value['input_name'] ?? "", 10, '<br />')?></span></h4>
               <small><?=$value['input_title']?></small>
               <ul>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i>LINKEDIN</a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
+                <?php if ($value['input_linkedIn']): ?>
+                <li><a href="<?=$value['input_linkedIn']?>"><i class="fab fa-linkedin-in"></i>LINKEDIN</a></li>
+                  
+                <?php endif ?>
+
+                <?php if ($value['input_facebook']): ?>
+                <li><a href="<?=$value['input_facebook']?>"><i class="fab fa-facebook"></i>FACEBOOK</a></li>
+                  
+                <?php endif ?>
+
+                <?php if ($value['input_twitter']): ?>
+                <li><a href="<?=$value['input_twiter']?>"><i class="fab fa-twitter"></i>TWITTER</a></li>
+                  
+                <?php endif ?>
+
+                <?php if ($value['input_instagram']): ?>
+                <li><a href="<?=$value['input_instagram']?>"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
+                  
+                <?php endif ?>
+
+
               </ul>
             </figcaption>
           </figure>
