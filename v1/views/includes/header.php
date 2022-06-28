@@ -141,10 +141,10 @@ $page_title = isset($page_title) ? ("- ".$page_title) : "";
       <div class="logo"> <a href="/home"><img src="<?=$logo_directory?>" alt="Image"></a> </div>
       <!-- end logo -->
       <div class="phone-email">
-        <h5>
+        <img src="/asset/images/icon-phone.png" alt="Image">
+        <h4>
           <a href="tel:<?=$site_phone?>"><?=$site_phone?></a>
-          <img src="/asset/images/icon-phone.png" alt="Image">
-        </h5>
+        </h4>
         <small>
           <!-- <span class="fa fa-envelope"></span> &nbsp; &nbsp;  -->
           <a href="mailto:<?=$site_email?>"><?=$site_email?></a>

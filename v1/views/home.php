@@ -146,7 +146,8 @@ include 'includes/header.php';
 <section class="recent-gallery pb-10">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-5 wow fadeInUp"> <b>03</b>
+      <div class="col-lg-5 wow fadeInUp"> 
+        <!-- <b>03</b> -->
         <h4><span><?=$site_name?></span></h4>
         <h3>View our Gallery</h3>
         <a href="/gallery" class="link">SEE ALL GALLERY <i class="fas fa-caret-right"></i></a>
@@ -180,7 +181,8 @@ include 'includes/header.php';
 <section class="recent-gallery pt-0">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6 wow fadeInUp"> <b>05</b>
+      <div class="col-lg-6 wow fadeInUp"> 
+        <!-- <b>05</b> -->
         <h4><span>Website</span> Name</h4>
         <h3>Our Project</h3>
         <!-- <p>We are waiting for you in our sales office for having all these opportunities with affordable prices and appropriate payment opportunities..</p> -->
