@@ -1,7 +1,8 @@
-<?php
+	<?php
 $about = selectContent($conn, "read_about", ['visibility' => 'show'])[0];
 $vision = selectContent($conn, "read_vision", ['visibility' => 'show'])[0];
 $mission = selectContent($conn, "read_mission", ['visibility' => 'show'])[0];
+$our_values = selectContent($conn, "read_our_values", ['visibility' => 'show'])[0];
 
 $page_title = "About";
 
@@ -35,19 +36,42 @@ include 'includes/header.php'; ?>
         <img src="<?=$about['image_1']?>" alt="">
       </div>
       <!-- end col-5 -->
-      <div class="row" style="margin-top: 10px; margin-left: 10px;">
-      	
-      	<div class="col-md-6">
-        <h6>Vision</h6>
-       		<p><?=$vision['text_body']?></p>
-       </div>
+      <div class="container">
+		    <div class="row">
+		      <div class="col-lg-4 col-md-6">
+		        <div class="office-box">
+		          <h5>Our Vision</h5>
+		          <address>
+		          <?=$vision['text_body']?>
+		          </address>
+		        </div>
+		        <!-- end office-box --> 
+		      </div>
+		      <!-- end col-4 --> 
 
-       <div class="col-md-6">
-        <h6>Mission</h6>
-       		<p><?=$mission['text_body']?></p>
-       </div>
+		       <div class="office-box">
+		          <h5>Our Mission</h5>
+		          <address>
+		          <?=$mission['text_body']?>
+		          </address>
+		        </div>
+		        <!-- end office-box --> 
+		      </div>
+		      <!-- end col-4 --> 
 
-      </div>
+		       <div class="office-box">
+		          <h5>Our Values</h5>
+		          <address>
+		          <?=$our_values['text_body']?>
+		          </address>
+		        </div>
+		        <!-- end office-box --> 
+		      </div>
+		      <!-- end col-4 --> 
+
+		    </div>
+		    <!-- end row --> 
+		  </div>
     	 
 
 
