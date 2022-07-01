@@ -29,7 +29,7 @@ if (count($gallery) > 0) {
 }
 
 
-// var_dump($galleryImages);
+var_dump($galleryImages);
 
 include 'includes/header.php';
  ?>
@@ -108,11 +108,11 @@ include 'includes/header.php';
   <!-- end container -->
 </section>
 <!-- end intro -->
-<section class="benefits">
+<!-- <section class="benefits">
   <div class="container">
     <div class="row">
       <div class="col-12 wow fadeInUp">
-        <!-- <b>02</b> -->
+        <b>02</b>
         <h4><span><?=$site_name?></span> </h4>
         <h3>Services</h3>
       </div>
@@ -123,36 +123,36 @@ include 'includes/header.php';
       </style>
       <?php foreach ($services as $key => $value): ?>
 
-        <!-- end col-12 -->
+        end col-12
         <div class="col wow fadeInUp" data-wow-delay="0s">
           <figure>
-            <!-- <img src="/asset/images/icon-benefits01.png" alt="Image"> <b></b> -->
+            <img src="/asset/images/icon-benefits01.png" alt="Image"> <b></b> Not here
             <span class="fa <?=$value['icon_icon']?>" style="font-size:35px"></span> <b></b>
           </figure>
           <h6><?=$value['input_title']?></h6>
-          <!-- <span class="odometer" data-count="28" data-status="yes">0</span> <span class="extra">min</span>  -->
+          <span class="odometer" data-count="28" data-status="yes">0</span> <span class="extra">min</span> 
         </div>
 
-          <!-- end col -->
+          end col
 
       <?php endforeach; ?>
 
     </div>
-    <!-- end row -->
+    end row
   </div>
-  <!-- end container -->
-</section>
+  end container
+</section> -->
 <!-- end benefits -->
-<section class="recent-gallery pb-10">
+<<!-- section class="recent-gallery pb-10">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 wow fadeInUp"> 
-        <!-- <b>03</b> -->
+        <b>03</b>
         <h4><span><?=$site_name?></span></h4>
         <h3>View our Gallery</h3>
         <a href="/gallery" class="link">SEE ALL GALLERY <i class="fas fa-caret-right"></i></a>
       </div>
-      <!-- end col-5 -->
+      end col-5
       <div class="col-lg-7">
         <div class="row inner">
           <?php if ($availableGalleryImages): ?>
@@ -161,7 +161,7 @@ include 'includes/header.php';
               <div class="col-md-4 wow fadeInUp" data-wow-delay="0s">
                 <figure data-stellar-ratio="1.07"> <a href="<?=$value[isset($value['image_1']) ? 'image_1' :'image_2']?>" data-fancybox><img src="<?=$value[isset($value['image_1']) ? 'image_1' :'image_2']?>" alt="Image"></a> </figure>
               </div>
-              <!-- end col-4 -->
+              end col-4
             <?php if($key == 2){break;} endforeach; ?>
 
           <?php else: ?>
@@ -169,14 +169,14 @@ include 'includes/header.php';
           <?php endif; ?>
 
         </div>
-        <!-- end row -->
+        end row
       </div>
-      <!-- end col-7 -->
+      end col-7
     </div>
-    <!-- end row -->
+    end row
   </div>
-  <!-- end container -->
-</section>
+  end container
+</section> -->
 <!-- end recent-gallery -->
 <section class="recent-gallery pt-0">
   <div class="container">
